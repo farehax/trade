@@ -33,23 +33,26 @@
 
 // export default App;
 
-// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import TrademarkSearchPage from './components/TrademarkSearchPage';
-
+import Home from './components/Home'; // Ensure this path is correct
+ // Ensure this path is correct
+import TrademarkSearchPage from './components/TrademarkSearchPage'
 const App = () => {
   return (
     <Router>
       <Navbar />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/search" element={<TrademarkSearchPage />} />
-        {/* Add other routes here if needed */}
+        {/* Add other routes as needed */}
       </Routes>
     </Router>
   );
 };
 
 export default App;
+
+
 
