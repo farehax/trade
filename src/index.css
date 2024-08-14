@@ -1,0 +1,17 @@
+/* tailwind.css */
+
+@import url('https://path-to-your-gilroy-font/gilroy.css');
+
+/* Custom Font */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/gilroy-regular.woff2') format('woff2'),
+         url('/fonts/gilroy-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
